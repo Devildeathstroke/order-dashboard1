@@ -17,7 +17,7 @@ export default function Home() {
   const [filteredOrders, setFilteredOrders] = useState(mockOrders);
   const [navOpen, setNavOpen] = useState(false);
 
-  const handleSearch = (query) => {
+  const handleSearch = (query: string) => {
     if (!query) {
       setFilteredOrders(mockOrders);
       return;
